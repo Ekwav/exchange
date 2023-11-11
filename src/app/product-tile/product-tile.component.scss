@@ -1,0 +1,24 @@
+:host {
+    min-height: 10vh;
+    background-color: blue;
+    border-radius: 1vh;
+    display: flex;
+}
+
+.text {
+
+    padding: 1vh;
+}
+
+.filler {
+    flex-grow: 100;
+}
+
+.remove {
+    background-color: red;
+    width: 5vh;
+    height: 5vh;
+    display: block;
+    border-radius: 1vh;
+    align-self: end;
+}

@@ -1,0 +1,5 @@
+<div class="text"><h3>{{product?.name}}</h3> {{count()}}x 
+<span *ngIf="(product?.price ?? 0) > 0">{{product?.price}}€</span>
+</div>
+<span class="filler"></span>
+<span (click)="removeProduct($event)" mat-fab color="warn"  class="remove">-</span>
