@@ -12,9 +12,14 @@ import { MatButtonModule } from '@angular/material/button';
   styleUrl: './result.component.scss'
 })
 export class ResultComponent {
-  public result : [string, number][] = [];
-  constructor(private service: MoneyService, private router:Router) {
-    service.getChange().forEach((v,k) => this.result.push([k,v]));
+  public result: [string, number][] = [];
+  public sum: number = 0;
+  constructor(private service: MoneyService, private router: Router) {
+    service.getChange().forEach((v, k) => {
+      this.result.push([k, v]);
+    });
+
+    this.sum = service.getSum();
   }
 
   done() {

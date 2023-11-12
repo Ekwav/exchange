@@ -5,14 +5,15 @@ import { Product } from '../product';
 import { MoneyService } from '../money.service';
 import { Router } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
+import { MatListModule } from '@angular/material/list';
 
 @Component({
   selector: 'app-product-list',
   standalone: true,
-  imports: [CommonModule, ProductTileComponent, MatButtonModule],
+  imports: [CommonModule, ProductTileComponent, MatButtonModule, MatListModule],
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.scss'
 })
 export class ProductListComponent {
-  constructor(public service: MoneyService, public router:Router){}
+  constructor(public service: MoneyService, public router: Router) { }
 }

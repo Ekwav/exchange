@@ -4,11 +4,13 @@ import { Product } from '../product';
 import { MoneyService } from '../money.service';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-product-add',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, MatInputModule, MatButtonModule],
   templateUrl: './product-add.component.html',
   styleUrl: './product-add.component.scss'
 })

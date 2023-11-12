@@ -1,8 +1,8 @@
 <app-product-tile *ngFor="let product of service.products" [product]="product"></app-product-tile>
 <!-- navigate to /moneys -->
-<button mat-stroked-button color="primary" (click)="router.navigate(['moneys'])" class="continue">Weiter</button>
-<button class="edit" (click)="router.navigate(['product/add'])">Add</button>
+<button mat-raised-button color="primary" (click)="router.navigate(['moneys'])" class="continue">Weiter</button>
+<button mat-button color="primary" class="edit" (click)="router.navigate(['product/add'])">Add</button>
 <details>
   <summary>Remove</summary>
-  <button *ngFor="let product of service.products" (click)="service.removeProductOption(product)">Remove {{product.name}}</button>
+  <button mat-raised-button color="warn" class="removepro" *ngFor="let product of service.products" (click)="service.removeProductOption(product)">Remove {{product.name}}</button>
 </details>

@@ -1,6 +1,15 @@
-<p>product-add works!</p>
-<input [(ngModel)]="newProduct.name" placeholder="name">
-<input [(ngModel)]="newProduct.price" placeholder="price" type="number">
 
-<button (click)="addProduct()">Add Product</button>
-<button (click)="cancel()">Clear</button>
+<mat-form-field class="example-full-width">
+    <mat-label>Add Product</mat-label>
+    <input matInput [(ngModel)]="newProduct.name" placeholder="z.B. punsch">
+</mat-form-field>
+
+<mat-form-field class="example-full-width">
+    <mat-label>price</mat-label>
+<input matInput [(ngModel)]="newProduct.price" placeholder="price" type="number">
+</mat-form-field>
+
+
+<button mat-raised-button (click)="addProduct()" >Add Product</button>
+<button mat-raised-button (click)="cancel()">Cancel</button>
+

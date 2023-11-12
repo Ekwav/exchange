@@ -1,5 +1,9 @@
-<div class="text"><h3>{{product?.name}}</h3> {{count()}}x 
-<span *ngIf="(product?.price ?? 0) > 0">{{product?.price}}€</span>
+<div class="main" matRipple [style.background-color]="color" [style.color]="textColor">
+    <div  class="text">
+        <h2>{{product?.name}}</h2>
+        <span class="count" [class.bold]="count() > 0">{{count()}}x </span>
+        <span *ngIf="(product?.price ?? 0) > 0" >{{product?.price}}€</span>
+    </div>
+    <span class="filler"></span>
+    <span (click)="removeProduct($event)" [style.color]="'#000000'" matRipple mat-fab color="warn"  class="remove">-</span>
 </div>
-<span class="filler"></span>
-<span (click)="removeProduct($event)" mat-fab color="warn"  class="remove">-</span>

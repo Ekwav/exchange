@@ -1,6 +1,6 @@
 .done {
     height: 5vh;
-    width: 5vh;
+    width: auto;
 }
 
 :host {
@@ -9,4 +9,11 @@
 
 .elem {
     background-color: lightgreen;
+    text-align: center;
+
+}
+
+.centerer {
+    width: 100%;
+    text-align: center;
 }
