@@ -9,6 +9,7 @@
 <input matInput [(ngModel)]="newProduct.price" placeholder="price" type="number">
 </mat-form-field>
 
+<input [(colorPicker)]="newProduct.color!" [style.background]="newProduct.color"/>
 
 <button mat-raised-button (click)="addProduct()" >Add Product</button>
 <button mat-raised-button (click)="negate()" >Negativ</button>

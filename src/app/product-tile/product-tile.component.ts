@@ -46,8 +46,11 @@ export class ProductTileComponent {
     }
     let color = '#';
     let full = color + (((hash >> 24) & 0xFF) << 16 | ((hash >> 16) & 0xFF) << 8 | ((hash >> 8) & 0xFF)).toString(16).padStart(6, '0');
-    let shouldTextBeBlack = (parseInt(full.substring(1, 3), 16) * 0.299 + parseInt(full.substring(3, 5), 16) * 0.587 + parseInt(full.substring(5, 7), 16) * 0.114) > 121;
-    this.color = full;
-    this.textColor = shouldTextBeBlack ? "#000000" : "#ffffff";
+    this.color = this.product?.color ?? full;
+    this.textColor = this.shouldTextBeBlack() ? "#000000" : "#ffffff";
+  }
+
+  private shouldTextBeBlack() {
+    return (parseInt(this.color.substring(1, 3), 16) * 0.299 + parseInt(this.color.substring(3, 5), 16) * 0.587 + parseInt(this.color.substring(5, 7), 16) * 0.114) > 121;
   }
 }

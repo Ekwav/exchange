@@ -33,22 +33,22 @@ export class MoneyService {
     if (stored !== null) {
       this.products = JSON.parse(stored);
     } else {
-      this.products = [{ name: "Kinderpunsch", price: 3.5 }];
+      this.products = [{ name: "Kinderpunsch", price: 3.5, color: "#110100" }];
     }
   }
 
   public products: Product[] = [];
   public units: Product[] = [
-  { name: "10 Cents", price: -0.10 },
-  { name: "20 Cents", price: -0.20 },
-  { name: "50 Cents", price: -0.50 },
-  { name: "1 Euro", price: -1.00 },
-  { name: "2 Euro", price: -2.00 },
-  { name: "5 Euro", price: -5.00 },
-  { name: "10 Euro", price: -10.00 },
-  { name: "20 Euro", price: -20.00 },
-  { name: "50 Euro", price: -50.00 },
-  { name: "100 Euro", price: -100.00 },
+  { name: "10 Cents", price: -0.10, color: "blue" },
+  { name: "20 Cents", price: -0.20, color: "#011100" },
+  { name: "50 Cents", price: -0.50, color: "#011100" },
+  { name: "1 Euro", price: -1.00, color: "#011100" },
+  { name: "2 Euro", price: -2.00, color: "#011100" },
+  { name: "5 Euro", price: -5.00, color: "#011100" },
+  { name: "10 Euro", price: -10.00, color: "#011100" },
+  { name: "20 Euro", price: -20.00, color: "#011100" },
+  { name: "50 Euro", price: -50.00, color: "#011100" },
+  { name: "100 Euro", price: -100.00, color: "#01f100" },
   ];
 
   public selected: Map<Product, number> = new Map();
