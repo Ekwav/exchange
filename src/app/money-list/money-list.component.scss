@@ -1,11 +1,11 @@
 :host {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1vh 1vh;
 }
 
 .continue {
-    height: 8vh;
+    min-height: 8vh;
 }
 
 .centerer {
@@ -16,4 +16,9 @@
 
 .difference {
     text-align: center;
+    font-size: 35px;
+}
+
+.diff-amount {
+    font-size: 50px;
 }

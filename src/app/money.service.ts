@@ -39,18 +39,18 @@ export class MoneyService {
 
   public products: Product[] = [];
   public units: Product[] = [
-  { name: "10 cents", price: -0.10 },
-  { name: "20 cents", price: -0.20 },
-  { name: "50 cents", price: -0.50 },
-  { name: "1 euro", price: -1.00 },
-  { name: "2 euro", price: -2.00 },
-  { name: "5 euro", price: -5.00 },
-  { name: "10 euro", price: -10.00 },
-  { name: "20 euro", price: -20.00 },
-  { name: "50 euro", price: -50.00 },
-  { name: "100 euro", price: -100.00 },
-  { name: "200 euro", price: -200.00 },
-  { name: "500 euro", price: -500.00 }
+  { name: "10 Cents", price: -0.10 },
+  { name: "20 Cents", price: -0.20 },
+  { name: "50 Cents", price: -0.50 },
+  { name: "1 Euro", price: -1.00 },
+  { name: "2 Euro", price: -2.00 },
+  { name: "5 Euro", price: -5.00 },
+  { name: "10 Euro", price: -10.00 },
+  { name: "20 Euro", price: -20.00 },
+  { name: "50 Euro", price: -50.00 },
+  { name: "100 Euro", price: -100.00 },
+  { name: "200 Euro", price: -200.00 },
+  { name: "500 Euro", price: -500.00 }
   ];
 
   public selected: Map<Product, number> = new Map();

@@ -5,8 +5,13 @@
     display: flex;
 }
 
-.text {
+h2 {
 
+    font-size: 45px; 
+}
+
+.text {
+    font-size: 30px; 
     padding: 1vh;
 }
 
@@ -38,5 +43,5 @@
 }
 
 .count {
-    font-size: large;
+    font-size: 40px;
 }

@@ -29,4 +29,8 @@ export class ProductAddComponent {
   cancel() {
     this.router.navigate(['products']);
   }
+
+  negate() {
+    this.newProduct.price = -this.newProduct.price;
+  }
 }
