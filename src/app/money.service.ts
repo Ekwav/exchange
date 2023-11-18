@@ -49,8 +49,6 @@ export class MoneyService {
   { name: "20 Euro", price: -20.00 },
   { name: "50 Euro", price: -50.00 },
   { name: "100 Euro", price: -100.00 },
-  { name: "200 Euro", price: -200.00 },
-  { name: "500 Euro", price: -500.00 }
   ];
 
   public selected: Map<Product, number> = new Map();
