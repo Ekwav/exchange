@@ -1,6 +1,6 @@
 <app-product-tile *ngFor="let product of service.units" [product]="product" class="pricefield"></app-product-tile>
 <span class="difference">Betrag: <span class="diff-amount">{{service.getSum()}}€</span></span>
-<button mat-raised-button color="primary" (click)="router.navigate(['result'])" class="continue"  >Nächste Bestellung</button> 
+<button mat-raised-button color="primary" (click)="router.navigate(['result'])" class="continue"  >Wechselgeld anzeigen</button> 
 
 <button mat-raised-button color="secondary" (click)="router.navigate([''])" class="continue"  >Zurück</button>
-<button mat-raised-button color="warning" (click)="service.reset(); router.navigate([''])" class="continue"  >Zurücksetzen</button>
+<button mat-raised-button color="warning" (click)="service.reset(); router.navigate([''])" class="continue"  >Nächste Bestellung</button>
