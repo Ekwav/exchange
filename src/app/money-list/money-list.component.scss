@@ -17,10 +17,13 @@
 .difference {
     text-align: center;
     font-size: 35px;
+    display: block;
 }
 
 .diff-amount {
+    margin-top: 20px;
     font-size: 50px;
     min-height: 80px;
     display: block;
+    text-align: center;
 }
